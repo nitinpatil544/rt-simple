@@ -7,6 +7,7 @@ $( document ).ready( function ( ) {
     $( '.slider' ).slick( {
         prevArrow: '.slider-controller .prev',
         nextArrow: '.slider-controller .next',
+        dots: true,
         responsive: [
             {
                 breakpoint: 600,

@@ -322,6 +322,7 @@ footer p {
 
     header nav ul li a {
         display: block;
+        padding-left: 20px;
     }
 
     .desktopNav li a:hover{
@@ -336,6 +337,7 @@ footer p {
         display: block;
         padding: 9px;
         background: #993404;
+        color: #fff;
         cursor: pointer;
         margin-top: 20px;
     }
