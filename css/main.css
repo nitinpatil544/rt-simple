@@ -1,0 +1,252 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Apr 25, 2017, 2:41:05 PM
+    Author     : nitin
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.container {
+    width: 960px;
+    position: relative;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+/*======== header ========*/
+
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+header nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    font-family: tahoma;
+}
+
+header nav ul li a:hover, header nav .active a {
+    color: #993404;
+}
+
+/*======== banner ========*/
+
+.slider-controller {
+    background: #333;
+    padding: 20px 0;
+    position: relative;
+}
+.slider {
+    width: 960px;
+    margin: auto;
+}
+
+.arrow-controller {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.arrow-controller span {
+    font-size: 14px;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    color: red;
+    text-align: right;
+}
+
+/*.arrow-controller {
+    position: absolute;
+    right: 0;
+    top: 0;
+}*/
+
+/*.arrow-controller .next  {
+    position: absolute;
+    right: 0;
+}*/
+
+/*======== content ========*/
+
+#content {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#content .sidebar {
+    width: 28%;
+    height: 258px;
+    background: #f5f5f5;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+#content .sidebar li {
+    width: 95%;
+    margin-top: 15px;
+}
+
+#content .sidebar li a {
+    display: block;
+    padding: 5px 0;
+    font-size: 17px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: #993408;
+    text-decoration: none;
+    transition: .15s linear color;
+    position: relative;
+}
+
+#content .sidebar li a:hover {
+    background: #993408;
+    color: #fff;
+    display: block;
+}
+
+#content .main-content {
+    width: 72%;
+    height: auto;
+    float: right;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+}
+
+#content .main-content .box {
+    width: 29%;
+    height: auto;
+    margin-left: 17px;
+    display: inline-block;
+}
+
+#content .main-content .box h3 {
+    font-size: 15px;
+    font-family: georgia;
+    color: #000;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+#content .main-content .box p {
+    font-size: 13px;
+    font-family: tahoma;
+    color: #333;
+    margin-top: 12px;
+}
+
+/*======== fatfooter ========*/
+
+#fatfooter {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+#fatfooter .box {
+    width: 23%;
+    height: auto;
+    float: left;
+    margin-right: 19px;
+}
+
+#fatfooter .box .fa {
+    font-size: 24px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+#fatfooter .box h3 {
+    font-size: 15px;
+    color: #888;
+    font-family: tahoma;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: normal;
+    border-bottom: 1px dashed #888;
+}
+
+#fatfooter .box li {
+    margin-bottom: 10px;
+}
+
+#fatfooter .box li a {
+    font-family: tahoma;
+    color: #888;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#fatfooter .box li a:hover {
+    color: #993408;
+}
+
+/*======== footer ========*/
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer nav {
+    float: left;
+}
+
+footer nav li {
+    display: inline-block;
+}
+
+footer nav li a {
+    padding: 0 12px 0 0;
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 13px;
+    color: #666;
+}
+
+footer nav li a:hover {
+    color: #993408;
+}
+
+footer .footer-logo {
+    float: right;
+}
+
+footer p {
+    font-size: 13px;
+    font-family: tahoma;
+    color: #999;
+    margin-top: -38px;
+}
