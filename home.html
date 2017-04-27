@@ -23,7 +23,11 @@ and open the template in the editor.
                     <img src="images/logo.png" alt="logo">
                 </div>
                 <nav>
-                    <ul>
+                    <label for="checkButton" id="menuLabel">
+                        <img src="images/menu.png" alt="" id="menu">
+                    </label>
+                    <input type="checkbox" name="checkButton" id="checkButton">
+                    <ul class="desktopNav animate">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Gallery</a></li>
@@ -40,9 +44,34 @@ and open the template in the editor.
         <div class="slider-controller">
             <div class="container">
                 <div class="slider">
-                    <div><img src="images/Slider_img.jpg" alt=""></div>
-                    <div><img src="images/Slider_img.jpg" alt=""></div>
-                    <div><img src="images/Slider_img.jpg" alt=""></div>
+                    <div class="wrapper">
+                        <img src="images/Slider_img.jpg" alt="">
+                        <div class="caption">
+                            <h3>Side Headline 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et turpis ultricies nisi dapibus malesuada vel a lacus. Fusce eget purus viverra, porta nisl ac, aliquet tortor Etiam sodales facilisis enim eu euismod. Donec cursus, sem at fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img src="images/Slider_img.jpg" alt="">
+                        <div class="caption">
+                            <h3>Side Headline 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et turpis ultricies nisi dapibus malesuada vel a lacus. Fusce eget purus viverra, porta nisl ac, aliquet tortor Etiam sodales facilisis enim eu euismod. Donec cursus, sem at fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img src="images/Slider_img.jpg" alt="">
+                        <div class="caption">
+                            <h3>Side Headline 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et turpis ultricies nisi dapibus malesuada vel a lacus. Fusce eget purus viverra, porta nisl ac, aliquet tortor Etiam sodales facilisis enim eu euismod. Donec cursus, sem at fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img src="images/Slider_img.jpg" alt="">
+                        <div class="caption">
+                            <h3>Side Headline 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et turpis ultricies nisi dapibus malesuada vel a lacus. Fusce eget purus viverra, porta nisl ac, aliquet tortor Etiam sodales facilisis enim eu euismod. Donec cursus, sem at fermentum.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="arrow-controller">
                     <span class="prev"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
@@ -52,32 +81,67 @@ and open the template in the editor.
         </div>
         <section id="content">
             <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#">Finding</a></li>
-                        <li><a href="#">Promotional Activities</a></li>
-                        <li><a href="#">Environment</a></li>
-                    </ul>
-                </div>
-                <div class="main-content">
-                    <div class="box">
-                        <img src="images/img1.jpg" alt="">
-                        <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">Finding</li>
+                    <li class="tab-link" data-tab="tab-2">Promotional Activities</li>
+                    <li class="tab-link" data-tab="tab-3">Environment</li>
+                </ul>
+                <div class="right">
+                    <div id="tab-1" class="tab-content current">
+                        <div class="box">
+                            <img src="images/img1.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img2.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img3.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <img src="images/img2.jpg" alt="">
-                        <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                    <div id="tab-2" class="tab-content">
+                        <div class="box">
+                            <img src="images/img1.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img2.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img3.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <img src="images/img3.jpg" alt="">
-                        <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                    <div id="tab-3" class="tab-content">
+                        <div class="box">
+                            <img src="images/img1.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img2.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/img3.jpg" alt="">
+                            <h3>Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida velit sit amet enim vehicula pharetra.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-            </div>
+            </div><!-- container -->
         </section>
         <section id="fatfooter">
             <div class="container">

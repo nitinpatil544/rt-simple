@@ -3,9 +3,35 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$( document ).ready( function () {
+$( document ).ready( function ( ) {
     $( '.slider' ).slick( {
         prevArrow: '.slider-controller .prev',
-        nextArrow: '.slider-controller .next'
+        nextArrow: '.slider-controller .next',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    arrow: false
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     } );
 } );
+
+$( document ).ready( function (  ) {
+
+    $( 'ul.tabs li' ).hover( function () {
+        var tab_id = $( this ).attr( 'data-tab' );
+
+        $( 'ul.tabs li' ).removeClass( 'current' );
+        $( '.tab-content' ).removeClass( 'current' );
+
+        $( this ).addClass( 'current' );
+        $( "#" + tab_id ).addClass( 'current' );
+    } )
+
+} )
