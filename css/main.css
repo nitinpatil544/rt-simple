@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Apr 25, 2017, 2:41:05 PM
     Author     : nitin
 */
+
 * {
     margin: 0;
     padding: 0;
@@ -103,6 +104,68 @@ header nav ul li a:hover, header nav .active a {
 .arrow-controller span .fa-arrow-down {
     margin-top: 233px;
     display: block;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* height: auto; */
+    vertical-align: middle;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 6px 12px;
+    padding: 0;
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 888;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 20px;
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.arrow-controller {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: #333;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #993404;
 }
 
 .wrapper {
@@ -311,10 +374,6 @@ footer p {
         z-index: 999;
     }
 
-    .animate{
-        transition: transform .5s;
-    }
-
     header nav ul li {
         display: block;
         margin-top: 5px;
@@ -352,6 +411,10 @@ footer p {
     .container {
         width: 100%;
         padding: 0 15px;
+    }
+
+    .arrow-controller {
+        display: none;
     }
 
     .caption {
@@ -393,10 +456,36 @@ footer p {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .container {
         width: 100%;
         padding: 0 15px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 30px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        right: -4px;
+        bottom: 0;
+        display: flex;
+        flex-flow: column;
+        /* align-items: center; */
+        justify-content: center;
+        /* height: auto; */
+        vertical-align: middle;
+    }
+
+    .arrow-controller {
+        position: absolute;
+        right: 14px;
+        top: 10px;
+        background: #333;
     }
 
     #content .tabs {
