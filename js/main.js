@@ -31,10 +31,10 @@ $( document ).ready( function (  ) {
         var tab_id = $( this ).attr( 'data-tab' );
 
         $( 'ul.tabs li' ).removeClass( 'current' );
-        $( '.tab-content' ).removeClass( 'current' );
+        $( '.tab-content' ).addClass( 'hide' );
 
         $( this ).addClass( 'current' );
-        $( "#" + tab_id ).addClass( 'current' );
+        $( "#" + tab_id ).removeClass( 'hide' );
     } )
 
 } )
