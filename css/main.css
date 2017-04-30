@@ -858,9 +858,7 @@ ul {
 }
 
 /*======== header ========*/
-
 header {
-    width: 100%;
     padding: 20px 0;
 }
 
@@ -898,7 +896,6 @@ header nav ul li a:hover, header nav .active a {
 }
 
 /*======== banner ========*/
-
 .slider-controller {
     height: auto;
     background: #333;
@@ -1034,7 +1031,6 @@ header nav ul li a:hover, header nav .active a {
 }
 
 /*======= content ========*/
-
 #content {
     padding: 20px 0;
 }
@@ -1094,9 +1090,7 @@ header nav ul li a:hover, header nav .active a {
 }
 
 #content .tab-content{
-    /*display: none;*/
     background: transparent;
-    /*padding: 15px;*/
 }
 
 .hide {
@@ -1104,9 +1098,7 @@ header nav ul li a:hover, header nav .active a {
 }
 
 /*======== fatfooter ========*/
-
 #fatfooter {
-    width: 100%;
     height: auto;
     background: #f5f5f5;
     padding: 20px 0;
@@ -1145,7 +1137,6 @@ header nav ul li a:hover, header nav .active a {
 }
 
 /*======== footer ========*/
-
 footer {
     padding: 20px 0;
 }
@@ -1158,7 +1149,7 @@ footer nav li {
     display: inline-block;
 }
 
-footer nav li a {
+footer nav li a, .helpful-links li a, .categories-links li a {
     padding: 0 12px 0 0;
     text-decoration: none;
     font-family: tahoma;
@@ -1166,7 +1157,7 @@ footer nav li a {
     color: #666;
 }
 
-footer nav li a:hover {
+footer nav li a:hover, .helpful-links li a:hover, .categories-links li a:hover {
     color: #993408;
 }
 
@@ -1189,6 +1180,10 @@ footer p {
 
 #about h1, h3 {
     font-family: georgia;
+}
+
+#about h3 {
+    margin-top: 30px;
 }
 
 #about p {
@@ -1231,6 +1226,10 @@ footer p {
 
 .side-search {
     margin: 20px 0;
+}
+
+.categories-links li a {
+    font-size: 16px;
 }
 
 @media screen and (max-width: 992px) {
