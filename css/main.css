@@ -942,6 +942,7 @@ header nav ul li a:hover, header nav .active a {
 
 .arrow-controller span .fa-arrow-up {
     margin-bottom: 275px;
+    display: block;
 }
 
 .slick-dots {
@@ -1309,5 +1310,6 @@ footer p {
 @media screen and (max-width: 1200px) {
     .arrow-controller span .fa-arrow-up {
         margin-bottom: 230px;
+        display: block;
     }
 }
